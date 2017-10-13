@@ -3,6 +3,7 @@ const mockResponse = {
    "responseGitSuccessRepo":[  
       "git_repositories_javascript",
       "git_repositories_react_redux",
+      "git_repositories_react_redux_with-unit_tests",
       "login_logout",
       "pdf.js",
       "project_setup",
