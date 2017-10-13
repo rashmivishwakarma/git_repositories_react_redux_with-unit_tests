@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for component\gitRepoComponent.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">component/</a> gitRepoComponent.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">64.79% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>46/71</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75.61% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>31/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">76.47% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>13/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">29.03% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>9/31</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">7 statements, 7 functions, 16 branches</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import {render} from 'react-dom';
+import {connect} from 'react-redux';
+import displayGitRepo from './../action/action';
+import {bindActionCreators} from 'redux';
+&nbsp;
+class GitRepoComponent extends React.Component {
+<span class="fstat-no" title="function not covered" >    constructor(props)<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span>
+        super(props);
+<span class="cstat-no" title="statement not covered" >        t</span>his.state = {
+            gitUserName : '',
+            flag: true,
+            data: ''
+        }
+<span class="cstat-no" title="statement not covered" >        t</span>his.getGitRepo = this.getGitRepo.bind(this);
+<span class="cstat-no" title="statement not covered" >        t</span>his.getGitUserName = this.getGitUserName.bind(this);
+<span class="cstat-no" title="statement not covered" >        t</span>his.disableButton = this.disableButton.bind(this);
+    }
+&nbsp;
+    getGitRepo(){
+<span class="cstat-no" title="statement not covered" >        t</span>his.props.displayGitRepo(this.state.gitUserName);
+    }
+&nbsp;
+    getGitUserName(event){
+<span class="cstat-no" title="statement not covered" >        t</span>his.setState({
+            gitUserName: event.target.value
+        })
+    }
+&nbsp;
+    disableButton(){
+<span class="cstat-no" title="statement not covered" >        if(this.state.gitUserName.length &gt; 0){</span>
+<span class="cstat-no" title="statement not covered" >            t</span>his.setState({
+                flag: false
+            })
+        }else{
+<span class="cstat-no" title="statement not covered" >            t</span>his.setState({
+                flag: true
+            })
+        }
+    }
+&nbsp;
+    componentWillReceiveProps(nextProps) {
+<span class="cstat-no" title="statement not covered" >        t</span>his.setState({
+            data: nextProps
+        })
+    }
+&nbsp;
+    render(){
+<span class="cstat-no" title="statement not covered" >        l</span>et responseData = " ";
+<span class="cstat-no" title="statement not covered" >        if(this.state.data.successData){</span>
+<span class="cstat-no" title="statement not covered" >            l</span>et temp = this.props.successData.getIn(['unameArray']);
+<span class="cstat-no" title="statement not covered" >            r</span>esponseData = temp.map(<span class="fstat-no" title="function not covered" >(repo) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                r</span>eturn &lt;li key={repo}&gt;{repo}&lt;/li&gt;
+            })
+        } else <span class="cstat-no" title="statement not covered" >if(this.state.data.errorData){</span>
+<span class="cstat-no" title="statement not covered" >            r</span>esponseData = &lt;li&gt;user not foundd&lt;/li&gt;
+        } else <span class="cstat-no" title="statement not covered" >if(this.state.data.NoRepo){</span>
+<span class="cstat-no" title="statement not covered" >            r</span>esponseData = &lt;li&gt;You have 0 repo&lt;/li&gt;
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        r</span>eturn(
+            &lt;div&gt; 
+                &lt;h3&gt;Get Git Repositories&lt;/h3&gt;
+                &lt;h1&gt;Enter git username&lt;/h1&gt;
+                &lt;input type="text" maxLength="20" value={this.state.gitUserName} onChange={this.getGitUserName} onKeyUp={this.disableButton}/&gt;
+                &lt;button disabled={this.state.flag} onClick={this.getGitRepo}&gt;Get git repo&lt;/button&gt;
+                &lt;ul&gt;
+                    {responseData}
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        )
+    }
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function mapStateToProps(state){</span>
+<span class="cstat-no" title="statement not covered" >    r</span>eturn {
+        successData: state.getIn(['repoName']),
+        errorData: state.getIn(['error']),
+        NoRepo : state.getIn(['NoRepo'])
+    }
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function matchDispatchToProps(dispatch){</span>
+<span class="cstat-no" title="statement not covered" >    r</span>eturn bindActionCreators({displayGitRepo: displayGitRepo}, dispatch)
+}
+&nbsp;
+export default connect(mapStateToProps,matchDispatchToProps)(GitRepoComponent);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 13 2017 23:35:30 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
