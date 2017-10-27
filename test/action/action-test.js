@@ -22,7 +22,7 @@ describe('Action', () => {
             payload: { unameArray: response }  
         }]
         const store = mockStore();
-        return store.dispatch(displayGitRepo('rashmivishwakarma')).then(() => {
+        return store.dispatch(displayGitRepo('rash')).then(() => {
             expect(store.getActions()).toEqual(expectedActions);
         });
     });
